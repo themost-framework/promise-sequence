@@ -1,0 +1,30 @@
+{
+  "name": "@themost/promise-sequence",
+  "version": "1.0.0",
+  "description": "Run promises in sequence",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/themost-framework/promise-sequence.git"
+  },
+  "keywords": [
+    "promise",
+    "all",
+    "sequence"
+  ],
+  "author": "",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/themost-framework/promise-sequence/issues"
+  },
+  "homepage": "https://github.com/themost-framework/promise-sequence#readme",
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "jasmine": "^4.1.0",
+    "jasmine-spec-reporter": "^7.0.0"
+  }
+}
