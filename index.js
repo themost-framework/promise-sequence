@@ -13,10 +13,10 @@ if (typeof Promise.sequence !== 'function') {
      * @returns {Array<*>}
      */
     Promise.sequence = function promiseSequence(values) {
-        return values.reduce((promise, item) => (
-            promise.then((result) => (
-                 item().then(Array.prototype.concat.bind(result))
-            ))
-        ), Promise.resolve([]));
+        return values.reduce(function (promise, item) {
+            return (promise.then(function (result) {
+                return (item().then(Array.prototype.concat.bind(result)));
+            }));
+        }, Promise.resolve([]));
     }
 }
