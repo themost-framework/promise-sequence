@@ -1,7 +1,7 @@
 {
   "name": "@themost/promise-sequence",
   "version": "1.0.0",
-  "description": "Run promises in series",
+  "description": "Execute promises in series",
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
