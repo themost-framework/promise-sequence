@@ -3,5 +3,5 @@
 type ExecutePromise = () => Promise<any>;
 
 interface PromiseConstructor {
-    sequence(values: ExecutePromise[]): any[];
+    sequence(values: ExecutePromise[]): Promise<any[]>;
 }
