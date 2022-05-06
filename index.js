@@ -8,13 +8,6 @@ if (typeof Promise.sequence !== 'function') {
      */
 
     /**
-     * @param {*} value 
-     */
-    function isPromise(value) {
-        return value != null && (typeof value === 'object' || typeof value === 'function') && typeof value.then === 'function';
-    }
-
-    /**
      * Executes an array of promises in series
      * @param {Array<ExecutePromise>} values 
      * @returns {Array<*>}
